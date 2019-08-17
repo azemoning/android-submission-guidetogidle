@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AboutActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_about"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/developer_photo"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/developer"
+            android:layout_marginTop="120dp"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:id="@+id/developer_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/developer_name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/developer_photo"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/developer_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/developer_name"
+            android:text="@string/developer_email"
+            android:textSize="14sp"/>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
