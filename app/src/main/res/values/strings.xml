@@ -7,4 +7,7 @@
     <string name="developer_name">Ahmad Saufi Maulana</string>
     <string name="developer_email">azemoning@gmail.com</string>
     <string name="member_photo">Member Photo</string>
+    <string name="developer_note">\"(G)I-DLE Fanboy\"</string>
+    <string name="placeholder">placeholder</string>
+    <string name="about_gidle">About (G)I-DLE</string>
 </resources>

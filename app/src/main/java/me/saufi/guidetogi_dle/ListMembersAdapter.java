@@ -21,6 +21,14 @@ public class ListMembersAdapter extends RecyclerView.Adapter<ListMembersAdapter.
         this.listMembers = list;
     }
 
+    private OnItemClickCallback onItemClickCallback;
+
+    public void setOnItemClickCallback(OnItemClickCallback onItemClickCallback) {
+        this.onItemClickCallback = onItemClickCallback;
+    }
+
+
+
     @NonNull
     @Override
     public ListMembersAdapter.ListViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int viewType) {
@@ -40,6 +48,17 @@ public class ListMembersAdapter extends RecyclerView.Adapter<ListMembersAdapter.
 
         holder.tvName.setText(members.getName());
         holder.tvPosition.setText(members.getPosition());
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onItemClickCallback.onItemClicked(listMembers.get(holder.getAdapterPosition()));
+            }
+        });
+    }
+
+    public interface OnItemClickCallback {
+        void onItemClicked(Members data);
     }
 
     @Override

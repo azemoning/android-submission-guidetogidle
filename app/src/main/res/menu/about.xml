@@ -4,8 +4,13 @@
 
     <item
         android:id="@+id/about_button"
-        android:icon="@drawable/ic_account_circle_black_24dp"
+        android:icon="@drawable/ic_insert_emoticon_black_24dp"
         android:title="@string/about_developer"
         app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/about_gidle_button"
+        android:title="@string/about_gidle"
+        app:showAsAction="never"/>
 
 </menu>

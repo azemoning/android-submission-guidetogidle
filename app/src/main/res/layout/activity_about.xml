@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="@string/developer_name"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:layout_below="@+id/developer_photo"
             android:layout_centerVertical="true"/>
@@ -40,6 +40,17 @@
             android:layout_below="@+id/developer_name"
             android:text="@string/developer_email"
             android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/developer_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/developer_email"
+            android:text="@string/developer_note"
+            android:textStyle="italic"/>
+
 
     </RelativeLayout>
 
